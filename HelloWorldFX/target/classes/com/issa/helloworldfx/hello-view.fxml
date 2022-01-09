@@ -3,14 +3,30 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.VBox?>
-
+<?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.text.Font?>
+<!-- (Default from JavaFX)
 <VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
       fx:controller="com.issa.helloworldfx.HelloController">
+
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
     </padding>
 
     <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
+    <Button text="Click me!" onAction="#onHelloButtonClick"/>
 </VBox>
+-->
+
+<!-- Custom Label and button through GridPane -->
+<GridPane fx:controller="com.issa.helloworldfx.HelloController" xmlns:fx="http://javafx.com/fxml"
+          alignment="CENTER" hgap="10" vgap="10">
+    <Label text="Welcome to JavaFX!" textFill="green">
+        <font>
+            <Font name="FreeMono Bold" size ="70"/>
+        </font>
+
+    </Label>
+</GridPane>
+
